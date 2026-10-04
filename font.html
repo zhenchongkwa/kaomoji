@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>แปลงฟอนต์น่ารัก — คลังคาโอโมจิ</title>
+  <meta name="description" content="แปลงตัวอักษรอังกฤษเป็นฟอนต์น่ารักสำหรับโปรไฟล์และโพสต์ SNS เช่น ตัวเขียน ตัวหนา ตัวเส้นคู่ Small caps คลิกเพื่อคัดลอก">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mali:wght@500;700&family=M+PLUS+Rounded+1c:wght@400;700&family=Noto+Sans+JP:wght@400&family=Space+Grotesk:wght@700&family=Space+Mono:wght@400;700&family=Noto+Sans+Thai:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=19">
+  <script src="js/intro.js?v=19"></script>
+  <script>try { var t = localStorage.getItem("kao.theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
+</head>
+<body data-page="font" data-title-key="navFont">
+  <header id="siteHeader" class="header"></header>
+
+  <main class="main tool">
+    <div class="page-head" data-tone="0">
+      <div class="page-icon" aria-hidden="true">ꜰᴏɴᴛ</div>
+      <h1 class="page-title" data-i18n="fontTitle"></h1>
+      <p class="privacy" data-i18n="privacy"></p>
+    </div>
+
+    <section class="panel" data-tone="3">
+      <h2 class="step"><span class="step-num">1</span><span data-i18n="fontStepStyle"></span></h2>
+      <nav class="chips" id="styleChips" aria-label="font styles"></nav>
+    </section>
+
+    <section class="panel" data-tone="1">
+      <h2 class="step"><span class="step-num">2</span><span data-i18n="fontStepType"></span></h2>
+      <textarea id="input" class="field" rows="3" data-i18n-ph="fontInput"></textarea>
+      <div class="btn-row">
+        <button type="button" class="btn" id="convertBtn" data-i18n="fontConvert"></button>
+        <button type="button" class="btn btn-outline" id="clearBtn" data-i18n="clear"></button>
+      </div>
+      <div class="arrow" aria-hidden="true">⬇️</div>
+      <textarea id="output" class="field output" rows="3" readonly></textarea>
+      <div class="btn-row">
+        <button type="button" class="btn" id="copyBtn" data-i18n="copy"></button>
+      </div>
+      <p class="note" data-i18n="fontNote"></p>
+    </section>
+
+    <section class="panel" data-tone="2">
+      <h2 class="section-title" data-i18n="fontAll"></h2>
+      <div class="pills" id="allStyles"></div>
+    </section>
+
+    <section class="howto">
+      <h3 data-i18n="howto"></h3>
+      <ol>
+        <li data-i18n="fontHow1"></li>
+        <li data-i18n="fontHow2"></li>
+        <li data-i18n="fontHow3"></li>
+        <li data-i18n="fontHow4"></li>
+      </ol>
+    </section>
+  </main>
+
+  <footer id="siteFooter" class="footer"></footer>
+
+  <script src="js/i18n.js?v=19"></script>
+  <script src="js/sound.js?v=19"></script>
+  <script src="js/common.js?v=19"></script>
+  <script src="js/fonts.js?v=19"></script>
+  <script src="js/font.js?v=19"></script>
+</body>
+</html>

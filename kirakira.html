@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>แต่งวิบวับ — คลังคาโอโมจิ</title>
+  <meta name="description" content="แต่งข้อความ SNS ให้วิบวับด้วยสัญลักษณ์น่ารัก กดปุ่มเพื่อเติม ⋆ ✧ ⟡ ꒰ა ໒꒱ ลงในข้อความ แล้วคัดลอกไปใช้ได้ทันที">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mali:wght@500;700&family=M+PLUS+Rounded+1c:wght@400;700&family=Noto+Sans+JP:wght@400&family=Space+Grotesk:wght@700&family=Space+Mono:wght@400;700&family=Noto+Sans+Thai:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=19">
+  <script src="js/intro.js?v=19"></script>
+  <script>try { var t = localStorage.getItem("kao.theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
+</head>
+<body data-page="kira" data-title-key="navKira">
+  <header id="siteHeader" class="header"></header>
+
+  <main class="main tool">
+    <div class="page-head" data-tone="2">
+      <div class="page-icon" aria-hidden="true">⟡₊·</div>
+      <h1 class="page-title" data-i18n="kiraTitle"></h1>
+      <p class="lead" data-i18n="kiraLead"></p>
+      <p class="privacy" data-i18n="privacy"></p>
+    </div>
+
+    <section class="panel" data-tone="3">
+      <div class="sym-grid" id="symbols"></div>
+    </section>
+
+    <section class="panel" data-tone="0">
+      <textarea id="input" class="field" rows="3" data-i18n-ph="kiraInput"></textarea>
+      <div class="btn-row">
+        <button type="button" class="btn" id="copyBtn" data-i18n="copy"></button>
+        <button type="button" class="btn btn-outline" id="clearBtn" data-i18n="clear"></button>
+      </div>
+    </section>
+
+    <section class="panel" data-tone="1">
+      <h2 class="section-title" data-i18n="kiraPresets"></h2>
+      <div class="pills" id="presets"></div>
+    </section>
+
+    <section class="howto">
+      <h3 data-i18n="howto"></h3>
+      <ol>
+        <li data-i18n="kiraHow1"></li>
+        <li data-i18n="kiraHow2"></li>
+        <li data-i18n="kiraHow3"></li>
+      </ol>
+    </section>
+  </main>
+
+  <footer id="siteFooter" class="footer"></footer>
+
+  <script src="js/i18n.js?v=19"></script>
+  <script src="js/sound.js?v=19"></script>
+  <script src="js/common.js?v=19"></script>
+  <script src="js/kirakira.js?v=19"></script>
+</body>
+</html>

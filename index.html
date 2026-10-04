@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>คลังคาโอโมจิ — Kaomoji Library</title>
+  <meta name="description" content="รวมคาโอโมจิ (Kaomoji) อิโมติคอนญี่ปุ่นมากกว่า 1500 แบบ คลิกเพื่อคัดลอก ค้นหาได้ทั้งภาษาไทยและอังกฤษ พร้อมเครื่องมือแต่งข้อความ SNS">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mali:wght@500;700&family=M+PLUS+Rounded+1c:wght@400;700&family=Noto+Sans+JP:wght@400&family=Space+Grotesk:wght@700&family=Space+Mono:wght@400;700&family=Noto+Sans+Thai:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=19">
+  <script src="js/intro.js?v=19"></script>
+  <script>
+    // ตั้งธีมก่อน render เพื่อไม่ให้หน้ากระพริบ
+    try { var t = localStorage.getItem("kao.theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body data-page="library">
+  <header id="siteHeader" class="header"></header>
+
+  <main class="main library">
+    <div class="lib-top">
+      <h1 class="hero-title"><span data-i18n="heroTitle"></span> <mark data-i18n="heroMark"></mark></h1>
+      <p class="page-lead" id="tagline"></p>
+      <div class="search-wrap">
+        <input id="search" type="search" autocomplete="off" spellcheck="false" data-i18n-ph="search">
+      </div>
+      <p class="kbd" data-i18n="kbdHint"></p>
+    </div>
+
+    <aside class="sidebar">
+      <p class="sidebar-title" data-i18n="categories"></p>
+      <nav class="cat-list" id="chips" aria-label="categories"></nav>
+    </aside>
+
+    <section class="lib-list">
+      <div class="toolbar">
+        <h2 id="sectionTitle"></h2>
+        <span class="count" id="count"></span>
+        <button class="link-btn" id="clearRecent" type="button" hidden></button>
+      </div>
+      <div class="grid" id="grid"></div>
+      <p class="empty" id="empty" hidden></p>
+    </section>
+  </main>
+
+  <footer id="siteFooter" class="footer"></footer>
+
+  <script src="data/kaomoji.js?v=19"></script>
+  <script src="js/i18n.js?v=19"></script>
+  <script src="js/sound.js?v=19"></script>
+  <script src="js/common.js?v=19"></script>
+  <script src="js/app.js?v=19"></script>
+</body>
+</html>

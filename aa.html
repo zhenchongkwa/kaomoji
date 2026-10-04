@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AA อวยพร — คลังคาโอโมจิ</title>
+  <meta name="description" content="สร้าง AA (ASCII art) อวยพรวันเกิด วันครบรอบ และวันพิเศษ ใส่ข้อความของคุณลงในลายน่ารัก คลิกเพื่อคัดลอกไปโพสต์ SNS">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mali:wght@500;700&family=M+PLUS+Rounded+1c:wght@400;700&family=Noto+Sans+JP:wght@400&family=Space+Grotesk:wght@700&family=Space+Mono:wght@400;700&family=Noto+Sans+Thai:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=19">
+  <script src="js/intro.js?v=19"></script>
+  <script>try { var t = localStorage.getItem("kao.theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
+</head>
+<body data-page="aa" data-title-key="navAA">
+  <header id="siteHeader" class="header"></header>
+
+  <main class="main tool">
+    <div class="page-head" data-tone="3">
+      <div class="page-icon" aria-hidden="true">🎂</div>
+      <h1 class="page-title" data-i18n="aaTitle"></h1>
+      <p class="lead" data-i18n="aaLead"></p>
+      <p class="privacy" data-i18n="privacy"></p>
+    </div>
+
+    <section class="panel" data-tone="0">
+      <h2 class="step"><span class="step-num">1</span><span data-i18n="aaStep1"></span></h2>
+      <nav class="chips" id="fontChips"></nav>
+    </section>
+
+    <section class="panel" data-tone="1">
+      <h2 class="step"><span class="step-num">2</span><span data-i18n="aaStep2"></span></h2>
+      <textarea id="input" class="field" rows="2" data-i18n-ph="aaInput"></textarea>
+    </section>
+
+    <section class="panel" data-tone="2">
+      <h2 class="step" id="results"><span class="step-num">3</span><span data-i18n="aaStep3"></span></h2>
+      <nav class="chips" id="catChips"></nav>
+      <div class="aa-list" id="list"></div>
+    </section>
+
+    <section class="howto">
+      <h3 data-i18n="howto"></h3>
+      <ol>
+        <li data-i18n="aaHow1"></li>
+        <li data-i18n="aaHow2"></li>
+        <li data-i18n="aaHow3"></li>
+      </ol>
+    </section>
+  </main>
+
+  <footer id="siteFooter" class="footer"></footer>
+
+  <script src="js/i18n.js?v=19"></script>
+  <script src="js/sound.js?v=19"></script>
+  <script src="js/common.js?v=19"></script>
+  <script src="js/fonts.js?v=19"></script>
+  <script src="js/aa.js?v=19"></script>
+</body>
+</html>
