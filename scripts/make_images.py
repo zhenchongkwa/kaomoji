@@ -71,7 +71,7 @@ def og():
 
     # คำบรรยายภาษาไทย + เครดิต
     th = font("leelawad.ttf", 40)
-    sub = "รวมคาโอโมจิ 1,500+ แบบ · คลิกคัดลอกได้ทันที"
+    sub = "รวมคาโอโมจิ 2,500+ แบบ · คลิกคัดลอกได้ทันที"
     d.text(((W - d.textlength(sub, font=th)) / 2, 420), sub, font=th, fill=(200, 200, 200))
     mono = font("consola.ttf", 26)
     by = "b y   z h e n c h o n g"

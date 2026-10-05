@@ -13,7 +13,7 @@ const vm = require("vm");
 
 const ROOT = path.join(__dirname, "..");
 const SITE = "https://zhenchongkwa.github.io/kaomoji/";
-const V = "20"; // เลขเวอร์ชันไฟล์ (กัน cache) — เพิ่มเมื่อแก้ CSS/JS
+const V = "21"; // เลขเวอร์ชันไฟล์ (กัน cache) — เพิ่มเมื่อแก้ CSS/JS
 const TODAY = new Date().toISOString().slice(0, 10);
 
 // ---------- โหลดข้อมูล ----------
@@ -155,7 +155,7 @@ const website = {
 write("index.html", libraryPage({
   base: "",
   url: SITE,
-  title: "คลังคาโอโมจิ — รวมคาโอโมจิ 1,500+ แบบ คัดลอกได้ทันที | Kaomoji Library",
+  title: "คลังคาโอโมจิ — รวมคาโอโมจิ 2,500+ แบบ คัดลอกได้ทันที | Kaomoji Library",
   desc: `รวมคาโอโมจิ (Kaomoji) อิโมติคอนญี่ปุ่น ${ALL.length.toLocaleString()} แบบ ในหมวดน่ารัก รัก เศร้า แมว หมี และสไตล์ SNS คลิกเพื่อคัดลอก ใช้ได้ทั้ง LINE, IG, X พร้อมเครื่องมือแปลงฟอนต์และแต่งข้อความ`,
   jsonld: website
 }));
