@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zhenchongkwa.github.io/kaomoji/sitemap.xml

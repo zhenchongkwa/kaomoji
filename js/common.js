@@ -36,6 +36,7 @@
   // ---------- header / footer ----------
   var PAGES = [
     { id: "library", href: "index.html", icon: "˘ᵕ˘", key: "navLibrary", tab: "tabLibrary" },
+    { id: "maker", href: "maker.html", icon: "(•‿•)", key: "navMaker", tab: "tabMaker" },
     { id: "font", href: "font.html", icon: "ꜰᴏɴᴛ", key: "navFont", tab: "tabFont" },
     { id: "aa", href: "aa.html", icon: "🎂", key: "navAA", tab: "tabAA" },
     { id: "frame", href: "frame.html", icon: "┏♡┓", key: "navFrame", tab: "tabFrame" },
@@ -43,6 +44,8 @@
     { id: "emoji", href: "emoji.html", icon: "🩷", key: "navEmoji", tab: "tabEmoji" }
   ];
   var page = document.body.dataset.page;
+  // หน้าที่อยู่ในโฟลเดอร์ย่อย (เช่น k/cat.html) ตั้ง data-base="../" เพื่อให้ลิงก์ถูก
+  var BASE = document.body.dataset.base || "";
 
   function renderHeader() {
     var el = document.getElementById("siteHeader");
@@ -50,13 +53,13 @@
     el.className = "header";
     el.innerHTML =
       '<div class="header-inner">' +
-        '<a class="brand" href="index.html">' +
+        '<a class="brand" href="' + BASE + 'index.html">' +
           '<span><span class="brand-name" data-i18n="siteName"></span>' +
           '<span class="tagline" data-i18n="siteSub"></span></span>' +
         '</a>' +
         '<nav class="tool-nav" aria-label="tools">' +
           PAGES.map(function (p) {
-            return '<a href="' + p.href + '" class="tool-link' + (p.id === page ? " active" : "") +
+            return '<a href="' + BASE + p.href + '" class="tool-link' + (p.id === page ? " active" : "") +
               '" data-i18n-title="' + p.key + '"><span class="tool-icon">' + p.icon + "</span>" +
               '<span class="tool-label" data-i18n="' + p.key + '"></span></a>';
           }).join("") +
@@ -74,7 +77,7 @@
     tabbar.className = "tabbar";
     tabbar.setAttribute("aria-label", "tools");
     tabbar.innerHTML = PAGES.map(function (p) {
-      return '<a href="' + p.href + '" class="tab' + (p.id === page ? " active" : "") + '"' +
+      return '<a href="' + BASE + p.href + '" class="tab' + (p.id === page ? " active" : "") + '"' +
         (p.id === page ? ' aria-current="page"' : "") + '>' +
         '<span class="tab-icon">' + p.icon + "</span>" +
         '<span data-i18n="' + p.tab + '"></span></a>';
@@ -116,7 +119,7 @@
 
   // ป๊อปเบาๆ ให้ปุ่มทั่วไป (ปุ่มที่คัดลอก / ดาว / สัญลักษณ์ / หัวเว็บ มีเสียงของตัวเองแล้ว)
   var POP = ".chip, .cat, .btn, .tab, .tool-link, .footer-links a, .brand, .link-btn, .jump-btn";
-  var OWN_SOUND = "#copyBtn, .card, .pill, .aa-card, .fav, .sym, .icon-btn";
+  var OWN_SOUND = "#copyBtn, #randomBtn, #saveBtn, .card, .pill, .aa-card, .fav, .sym, .icon-btn, .maker-face";
   document.addEventListener("click", function (e) {
     var el = e.target.closest(POP);
     if (!el || e.target.closest(OWN_SOUND)) return;
@@ -137,7 +140,7 @@
       '<div class="footer-inner">' +
         '<nav class="footer-links">' +
           PAGES.map(function (p) {
-            return '<a href="' + p.href + '" data-i18n="' + p.key + '"></a>';
+            return '<a href="' + BASE + p.href + '" data-i18n="' + p.key + '"></a>';
           }).join("") +
         "</nav>" +
         '<p data-i18n="footer"></p>' +
@@ -159,14 +162,15 @@
     refreshLang();
   }
 
-  function refreshLang() {
+  // initial = โหลดหน้าครั้งแรก: คง <title> เดิมจาก HTML ไว้ (มีคีย์เวิร์ดสำหรับ SEO)
+  function refreshLang(initial) {
     document.documentElement.lang = lang;
     var lb = document.getElementById("langBtn");
     if (lb) { lb.textContent = lang === "th" ? "EN" : "TH"; lb.title = t("lang"); }
     applyI18n();
     updateSoundBtn();
     var titleKey = document.body.dataset.titleKey;
-    document.title = (titleKey ? t(titleKey) + " — " : "") + t("siteName");
+    if (!initial) document.title = (titleKey ? t(titleKey) + " — " : "") + t("siteName");
     listeners.forEach(function (fn) { fn(lang); });
   }
 
@@ -255,7 +259,7 @@
     jumpButton: jumpButton,
     sound: sound,
     // เรียกหลังหน้าเว็บลงทะเบียน onLang เรียบร้อย
-    start: function () { refreshLang(); }
+    start: function () { refreshLang(true); }
   };
 
   renderHeader();

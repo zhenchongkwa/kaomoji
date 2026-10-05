@@ -6,7 +6,8 @@
   var RECENT_MAX = 30;
 
   var state = {
-    cat: "all",
+    // หน้าหมวด (k/xxx.html) ตั้ง data-cat ไว้ที่ body
+    cat: document.body.dataset.cat || "all",
     query: "",
     favs: Kao.load("kao.favs", []),
     recent: Kao.load("kao.recent", [])
@@ -217,7 +218,14 @@
   });
 
   Kao.onLang(function () {
-    $("tagline").textContent = t("tagline", ALL.length);
+    var pageCat = DATA.find(function (c) { return c.id === document.body.dataset.cat; });
+    if (pageCat) {
+      // หน้าหมวด: หัวข้อเป็นชื่อหมวดตามภาษา
+      $("heroCat").textContent = Kao.lang === "th" ? "คาโอโมจิ" + pageCat.th : pageCat.en + " kaomoji";
+      $("tagline").textContent = t("catTagline", pageCat.items.length);
+    } else {
+      $("tagline").textContent = t("tagline", ALL.length);
+    }
     renderChips();
     renderGrid();
   });
