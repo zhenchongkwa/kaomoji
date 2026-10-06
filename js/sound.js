@@ -70,6 +70,12 @@
       lfo.start();
       lfo.stop(ctx.currentTime + 0.2);
     },
+    // "บุ๋ม" นุ่มๆ ตอนจิ้มโลโก้ / ตัวป๊อป (เสียงต่ำลงเร็วๆ + ป๊อปเบาๆ ซ้อน)
+    boop: function () {
+      var f = jitter(380);
+      tone("sine", f, f * 0.45, 0, 0.09, 0.75);
+      tone("triangle", f * 2.6, f * 1.8, 0, 0.035, 0.18);
+    },
     // วิ้งเสียงสูงแบบสุ่มโน้ต (ปุ่มสัญลักษณ์วิบวับ)
     sparkle: function () {
       var f = PENTA[Math.floor(Math.random() * PENTA.length)];

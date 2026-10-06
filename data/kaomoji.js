@@ -25,7 +25,7 @@
   }
 
   // ---------- สไตล์ SNS: หน้ามินิมอล + อีโมจิ (แต่งขึ้นใหม่) ----------
-  cat("sns-simple", "SNS มินิมอล", "SNS Minimal", "sns มินิมอล น่ารัก เรียบง่าย minimal simple cute aesthetic", String.raw`
+  cat("sns-simple", "มินิมอล", "Minimal", "sns มินิมอล น่ารัก เรียบง่าย minimal simple cute aesthetic หน้ามินิ tiny faces", String.raw`
 ᐢ ᵕ ᐢ
 ˘ ᵕ ˘
 ᵔ ᵕ ᵔ
@@ -60,7 +60,7 @@
 ( ˶ˊᵕˋ)੭
 `);
 
-  cat("sns-cry", "SNS งอแง / น้ำตาคลอ", "SNS Teary", "sns ร้องไห้ น้ำตา งอแง เศร้า cry teary sad sob", String.raw`
+  cat("sns-cry", "น้ำตาคลอ", "Teary", "sns ร้องไห้ น้ำตา งอแง เศร้า cry teary sad sob น้ำตาคลอ eyes", String.raw`
 ( ᐡ ᐧ ﻌ ᐧ ᐡ )💧
 ( ˘•̥-•̥˘ )
 ( ꒦ິ⌑꒦ີ )
@@ -90,7 +90,7 @@ T ˍ T🫠
 (  ⸝⸝´ ‸ ｀⸝⸝ )
 `);
 
-  cat("sns-love", "SNS ใจละลาย", "SNS Smitten", "sns รัก ใจละลาย หลงรัก ปลื้ม love smitten heart crush", String.raw`
+  cat("sns-love", "ใจละลาย", "In love", "sns รัก ใจละลาย หลงรัก ปลื้ม love smitten heart crush", String.raw`
 ( ˶ˆᗜˆ˵ )💗
 ( ˶ᵔ ᵕ ᵔ˶ )💞
 ( ⸝⸝ᵕᴗᵕ⸝⸝ )💕
@@ -118,7 +118,7 @@ T ˍ T🫠
 ( ᐢ⸝⸝ ̫ ⸝⸝ᐢ )🍓
 `);
 
-  cat("sns-hands", "SNS ทำมือ", "SNS Hand Signs", "sns มือ ทำมือ ยกนิ้ว ชูสองนิ้ว ชี้ hands thumbs peace point", String.raw`
+  cat("sns-hands", "ทำมือ", "Hands", "sns มือ ทำมือ ยกนิ้ว ชูสองนิ้ว ชี้ hands thumbs peace point signs hand", String.raw`
 ( ˶ˆᗜˆ˵ )👍🏻
 ( •̀ ᴗ •́ )✌🏻
 ( ᐢ ᵕ ᐢ )🫶🏻
@@ -145,7 +145,7 @@ T ˍ T🫠
 ( ・ᴗ・ )👆🏻
 `);
 
-  cat("sns-sparkle", "SNS วิบวับ", "SNS Sparkly", "sns ประกาย วิบวับ ดาว ตื่นเต้น sparkle star shine glitter excited", String.raw`
+  cat("sns-sparkle", "วิบวับ", "Sparkly", "sns ประกาย วิบวับ ดาว ตื่นเต้น sparkle star shine glitter excited sparkly", String.raw`
 ( ˶ˆᗜˆ˵ )✨
 ( ✧ᴗ✧ )
 ( ⸝⸝ ★ ᴗ ★ ⸝⸝ )
@@ -172,7 +172,7 @@ T ˍ T🫠
 ( ✦ ᴗ ✦ )
 `);
 
-  cat("sns-sleepy", "SNS ง่วง / ชิล", "SNS Sleepy / Chill", "sns ง่วง นอน ชิล พัก เหนื่อย sleepy chill tired rest", String.raw`
+  cat("sns-sleepy", "ง่วง", "Sleepy", "sns ง่วง นอน ชิล พัก เหนื่อย sleepy chill tired rest ง่วงๆ ชิลๆ", String.raw`
 ( ᴗ_ᴗ )💤
 ( ˘ω˘ )zzZ
 ( ᐢ- ̫ -ᐢ )
@@ -198,7 +198,7 @@ T ˍ T🫠
 ( ˶- ̫ -˶ )☁️
 `);
 
-  cat("sns-pout", "SNS งอน / ปั้นปึ่ง", "SNS Pouty", "sns งอน โกรธ หงุดหงิด ปั้นปึ่ง pout angry grumpy sulk", String.raw`
+  cat("sns-pout", "งอน", "Pouting", "sns งอน โกรธ หงุดหงิด ปั้นปึ่ง pout angry grumpy sulk pouty งอนนะ", String.raw`
 ( ˘･з･ )
 ( ¬ ε ¬ )
 ( •̀ ⤙ •́ )
@@ -223,7 +223,7 @@ T ˍ T🫠
 ( ･ั ᴖ ･ั )
 `);
 
-  cat("sns-animal", "SNS สัตว์น่ารัก", "SNS Cute Animals", "sns สัตว์ แมว หมา หมี กระต่าย น่ารัก animal cat dog bear bunny", String.raw`
+  cat("sns-animal", "สัตว์ตัวเล็ก", "Tiny animals", "sns สัตว์ แมว หมา หมี กระต่าย น่ารัก animal cat dog bear bunny สัตว์น่ารัก cute animals สัตว์ตัวจิ๋ว little critters", String.raw`
 ᓚᘏᗢ
 ฅ^._.^ฅ
 ฅ^. ̫ .^ฅ
@@ -250,7 +250,7 @@ T ˍ T🫠
 ⊂(ᐢ•ﻌ•ᐢ)⊃
 `);
 
-  cat("happy", "มีความสุข", "Happy", "ยิ้ม ดีใจ สุข happy smile joy glad", String.raw`
+  cat("happy", "ยิ้ม", "Happy", "ยิ้ม ดีใจ สุข happy smile joy glad มีความสุข ยิ้มแป้น", String.raw`
 (＾▽＾)
 (◕‿◕)
 (・∀・)
@@ -303,7 +303,7 @@ T ˍ T🫠
 (◍•ᴗ•◍)
 `);
 
-  cat("joy", "ดีใจสุดๆ", "Excited", "ตื่นเต้น ดีใจ เย้ ยินดี excited yay celebrate cheer", String.raw`
+  cat("joy", "ดีใจ", "Excited", "ตื่นเต้น ดีใจ เย้ ยินดี excited yay celebrate cheer ดีใจสุดๆ", String.raw`
 ヽ(・∀・)ﾉ
 ＼(＾▽＾)／
 ヽ(°〇°)ﾉ
@@ -348,7 +348,7 @@ o(*≧▽≦)ツ
 (*•̀ᴗ•́*)و ̑̑
 `);
 
-  cat("love", "รัก / หัวใจ", "Love", "รัก หัวใจ ชอบ love heart crush adore", String.raw`
+  cat("love", "รัก", "Love", "รัก หัวใจ ชอบ love heart crush adore รักนะ", String.raw`
 (♡μ_μ)
 (*^^*)♡
 ☆⌒ヽ(*'､^*)chu
@@ -401,7 +401,7 @@ o(*≧▽≦)ツ
 (⺣◡⺣)♡*
 `);
 
-  cat("shy", "เขินอาย", "Shy / Blush", "เขิน อาย หน้าแดง shy blush embarrassed", String.raw`
+  cat("shy", "เขิน", "Shy", "เขิน อาย หน้าแดง shy blush embarrassed เขินอาย เขินอะ blushing", String.raw`
 (⁄ ⁄•⁄ω⁄•⁄ ⁄)
 (*/ω＼)
 (*/。＼)
@@ -442,7 +442,7 @@ o(*≧▽≦)ツ
 (ɔ◔‿◔)ɔ ♥
 `);
 
-  cat("sad", "เศร้า / ร้องไห้", "Sad / Crying", "เศร้า ร้องไห้ เสียใจ น้ำตา sad cry tears upset", String.raw`
+  cat("sad", "เศร้า", "Sad", "เศร้า ร้องไห้ เสียใจ น้ำตา sad cry tears upset crying", String.raw`
 (╥﹏╥)
 (ToT)
 (T_T)
@@ -493,7 +493,7 @@ o(*≧▽≦)ツ
 (༎ຶ ෴ ༎ຶ)
 `);
 
-  cat("angry", "โกรธ", "Angry", "โกรธ โมโห หงุดหงิด angry mad rage annoyed", String.raw`
+  cat("angry", "โกรธ", "Angry", "โกรธ โมโห หงุดหงิด angry mad rage annoyed โกรธแล้ว", String.raw`
 (＃＞＜)
 (；⌣̀_⌣́)
 ☆o(＞＜；)○
@@ -544,7 +544,7 @@ o(｀ω´ )o
 (｀ー´)
 `);
 
-  cat("tableflip", "คว่ำโต๊ะ", "Table Flip", "คว่ำโต๊ะ โต๊ะ หงุดหงิด table flip rage unflip", String.raw`
+  cat("tableflip", "คว่ำโต๊ะ", "Table flip", "คว่ำโต๊ะ โต๊ะ หงุดหงิด table flip rage unflip", String.raw`
 (╯°□°）╯︵ ┻━┻
 (ノಠ益ಠ)ノ彡┻━┻
 ┻━┻ ︵ヽ(｀Д´)ﾉ︵ ┻━┻
@@ -621,7 +621,7 @@ w(°ｏ°)w
 (°□°)
 `);
 
-  cat("confused", "งง / สับสน", "Confused", "งง สับสน ไม่เข้าใจ สงสัย confused puzzled question hmm", String.raw`
+  cat("confused", "งง", "Confused", "งง สับสน ไม่เข้าใจ สงสัย confused puzzled question hmm งงอะ", String.raw`
 (￣ω￣;)
 (・_・ヾ
 (＠_＠)
@@ -663,7 +663,7 @@ w(°ｏ°)w
 (・ε・｀*)…
 `);
 
-  cat("worried", "กังวล / เหงื่อตก", "Worried / Nervous", "กังวล เครียด เหงื่อ ประหม่า worried nervous sweat anxious", String.raw`
+  cat("worried", "กังวล", "Nervous", "กังวล เครียด เหงื่อ ประหม่า worried nervous sweat anxious เหงื่อตก", String.raw`
 (;・∀・)
 (；￣ω￣)
 (・_・;)
@@ -704,7 +704,7 @@ w(°ｏ°)w
 (*_*;)
 `);
 
-  cat("bored", "เบื่อ / เฉยๆ", "Bored / Meh", "เบื่อ เฉย ไม่สนใจ bored meh whatever indifferent", String.raw`
+  cat("bored", "เบื่อ", "Bored", "เบื่อ เฉย ไม่สนใจ bored meh whatever indifferent เฉยๆ", String.raw`
 (￣ー￣)
 (－‸ლ)
 (￣д￣)
@@ -745,7 +745,7 @@ w(°ｏ°)w
 (｡-ω-)
 `);
 
-  cat("smug", "เท่ / หยิ่ง", "Cool / Smug", "เท่ หยิ่ง มั่นใจ เจ๋ง cool smug confident sunglasses", String.raw`
+  cat("smug", "เท่", "Smug", "เท่ หยิ่ง มั่นใจ เจ๋ง cool smug confident sunglasses เท่ไม่ไหว too", String.raw`
 (⌐■_■)
 (▀̿Ĺ̯▀̿ ̿)
 (￣ー￣)ｂ
@@ -786,7 +786,7 @@ w(°ｏ°)w
 (ง ͠° ͟ل͜ ͡°)ง
 `);
 
-  cat("sorry", "ขอโทษ / ไหว้", "Sorry / Bow", "ขอโทษ ไหว้ ก้มหัว ขอร้อง sorry apology bow please thanks", String.raw`
+  cat("sorry", "ขอโทษ", "Sorry", "ขอโทษ ไหว้ ก้มหัว ขอร้อง sorry apology bow please thanks ขอโทษน้า", String.raw`
 m(_ _)m
 <(_ _)>
 (シ_ _)シ
@@ -823,7 +823,7 @@ m(._.)m
 (￣^￣)ゞ
 `);
 
-  cat("greet", "ทักทาย / บ๊ายบาย", "Greeting / Wave", "สวัสดี ทักทาย โบกมือ บ๊ายบาย hello hi wave bye", String.raw`
+  cat("greet", "ทักทาย", "Greetings", "สวัสดี ทักทาย โบกมือ บ๊ายบาย hello hi wave bye greeting หวัดดี", String.raw`
 (*・ω・)ﾉ
 (￣▽￣)ノ
 (°▽°)/
@@ -866,7 +866,7 @@ m(._.)m
 ヾ(•ω•｀)o
 `);
 
-  cat("hug", "กอด", "Hug", "กอด อบอุ่น ปลอบ hug cuddle embrace", String.raw`
+  cat("hug", "กอด", "Hug", "กอด อบอุ่น ปลอบ hug cuddle embrace กอดๆ hugs", String.raw`
 (づ￣ ³￣)づ
 (つ≧▽≦)つ
 (つ✧ω✧)つ
@@ -904,7 +904,7 @@ m(._.)m
 (つ´∀｀)つ
 `);
 
-  cat("kiss", "จุ๊บ", "Kiss", "จูบ จุ๊บ หอม kiss smooch chu", String.raw`
+  cat("kiss", "จุ๊บ", "Kiss", "จูบ จุ๊บ หอม kiss smooch chu จุ๊บๆ kisses", String.raw`
 ( ˘ ³˘)♥
 (*￣3￣)╭
 (￣ε￣＠)
@@ -935,7 +935,7 @@ chu~(￣ε￣)
 (・ε・)
 `);
 
-  cat("dance", "เต้น / ปาร์ตี้", "Dance / Party", "เต้น ปาร์ตี้ สนุก dance party fun groove", String.raw`
+  cat("dance", "เต้น", "Dance", "เต้น ปาร์ตี้ สนุก dance party fun groove เต้นกัน", String.raw`
 ヾ(-_- )ゞ
 ♪┏(・o･)┛♪
 ♪┗ ( ･o･) ┓♪
@@ -975,7 +975,7 @@ chu~(￣ε￣)
 (*ﾟﾛﾟ)ﾉ♪
 `);
 
-  cat("fight", "ต่อสู้ / ชกต่อย", "Fight / Punch", "ต่อย สู้ ชก ตบ fight punch attack battle", String.raw`
+  cat("fight", "ต่อยกัน", "Fight", "ต่อย สู้ ชก ตบ fight punch attack battle ต่อสู้ ชกต่อย มาสู้กัน me", String.raw`
 (ง'̀-'́)ง
 (ง •̀_•́)ง
 (ง ͠° ͟ل͜ ͡°)ง
@@ -1014,7 +1014,7 @@ O=(_ _#)
 (ಠ‿ಠ)┘
 `);
 
-  cat("run", "วิ่ง / หนี", "Run / Escape", "วิ่ง หนี รีบ run escape hurry flee", String.raw`
+  cat("run", "วิ่ง", "Running", "วิ่ง หนี รีบ run escape hurry flee วิ่งหนี running away", String.raw`
 ε=ε=ε=┌(;*´Д｀)ﾉ
 ε=ε=ε=┌(つ´д｀)┘
 ヽ(；▽；)ノ
@@ -1044,7 +1044,7 @@ O=(_ _#)
 ε=ε=ε=ε=ε=ε=┌(￣ー￣)┘
 `);
 
-  cat("peek", "แอบมอง / ซ่อน", "Hide / Peek", "แอบ มอง ซ่อน หลบ peek hide sneak spy", String.raw`
+  cat("peek", "แอบมอง", "Peeking", "แอบ มอง ซ่อน หลบ peek hide sneak spy แอบมอง peeking", String.raw`
 |･ω･)
 |ω・)
 |д･)
@@ -1109,7 +1109,7 @@ __φ(．．)
 ╮(. ❛ ᴗ ❛.)╭
 `);
 
-  cat("sleep", "นอน / ง่วง", "Sleep / Tired", "นอน ง่วง หลับ เหนื่อย ฝันดี sleep tired sleepy night", String.raw`
+  cat("sleep", "นอน", "Sleep", "นอน ง่วง หลับ เหนื่อย ฝันดี sleep tired sleepy night bedtime", String.raw`
 (－_－) zzZ
 (∪｡∪)｡｡｡zzZ
 (－ω－) zzZ
@@ -1148,7 +1148,7 @@ _(:3」∠❀)_
 (｡･ω･｡)ﾉ おやすみ
 `);
 
-  cat("sick", "ป่วย / แย่", "Sick / Dead", "ป่วย ไม่สบาย ตาย หมดแรง เจ็บ sick dead dizzy hurt", String.raw`
+  cat("sick", "ป่วย", "Sick", "ป่วย ไม่สบาย ตาย หมดแรง เจ็บ sick dead dizzy hurt แย่ ไม่ไหวแล้ว not okay", String.raw`
 (×_×)
 (x_x)
 (×﹏×)
@@ -1187,7 +1187,7 @@ _:(´ཀ｀」 ∠):_
 (~_~;)
 `);
 
-  cat("magic", "เวทมนตร์ / ประกาย", "Magic / Sparkle", "เวทมนตร์ ประกาย ดาว วิ้ง magic sparkle star shine", String.raw`
+  cat("magic", "เวทมนตร์", "Magic", "เวทมนตร์ ประกาย ดาว วิ้ง magic sparkle star shine", String.raw`
 (ﾉ◕ヮ◕)ﾉ*:・ﾟ✧
 (∩ᄑ_ᄑ)⊃━☆ﾟ*･｡*･:≡( ε:)
 (ﾉ≧∀≦)ﾉ・‥…━━━★
@@ -1223,7 +1223,7 @@ _:(´ཀ｀」 ∠):_
 (⊃・ω・)⊃🌟
 `);
 
-  cat("cat", "แมว", "Cat", "แมว เหมียว neko cat kitty meow", String.raw`
+  cat("cat", "แมว", "Cat", "แมว เหมียว neko cat kitty meow cats", String.raw`
 (=^･ω･^=)
 (=^･ｪ･^=)
 (=①ω①=)
@@ -1266,7 +1266,7 @@ _:(´ཀ｀」 ∠):_
 (^･ω･^ )
 `);
 
-  cat("dog", "หมา", "Dog", "หมา สุนัข น้องหมา dog puppy woof", String.raw`
+  cat("dog", "หมา", "Dog", "หมา สุนัข น้องหมา dog puppy woof dogs", String.raw`
 ∪＾ェ＾∪
 ∪･ω･∪
 ∪￣-￣∪
@@ -1299,7 +1299,7 @@ U ´ᴥ｀ U
 (◕ᴥ◕ʋ)
 `);
 
-  cat("bear", "หมี", "Bear", "หมี หมีน้อย kuma bear teddy", String.raw`
+  cat("bear", "หมี", "Bear", "หมี หมีน้อย kuma bear teddy bears", String.raw`
 ʕ •ᴥ•ʔ
 ʕ ᵔᴥᵔ ʔ
 ʕ ㅇ ᴥ ㅇʔ
@@ -1334,7 +1334,7 @@ U ´ᴥ｀ U
 ʕ ﹷ ᴥ ﹷʔ
 `);
 
-  cat("rabbit", "กระต่าย", "Rabbit", "กระต่าย บันนี่ rabbit bunny usagi", String.raw`
+  cat("rabbit", "กระต่าย", "Rabbit", "กระต่าย บันนี่ rabbit bunny usagi bunnies", String.raw`
 ／(≧ x ≦)＼
 ／(･ × ･)＼
 ／(=´x｀=)＼
@@ -1363,7 +1363,7 @@ U ´ᴥ｀ U
 ∩∩ (・x・)
 `);
 
-  cat("animals", "สัตว์อื่นๆ", "Other Animals", "สัตว์ หมู นก ปลา หมึก แมงมุม ช้าง animal pig bird fish spider octopus", String.raw`
+  cat("animals", "สัตว์อื่นๆ", "Other animals", "สัตว์ หมู นก ปลา หมึก แมงมุม ช้าง animal pig bird fish spider octopus สัตว์อื่นๆ other animals more", String.raw`
 ( ´(00)ˋ )
 (￣(00)￣)
 ( ˘(oo)˘ )
@@ -1403,7 +1403,7 @@ C:。ミ
 >°))))彡
 `);
 
-  cat("food", "อาหาร / เครื่องดื่ม", "Food / Drink", "อาหาร กิน หิว กาแฟ ชา เค้ก food eat hungry coffee tea drink", String.raw`
+  cat("food", "อาหาร", "Food", "อาหาร กิน หิว กาแฟ ชา เค้ก food eat hungry coffee tea drink เครื่องดื่ม ของกิน snacks", String.raw`
 (っ˘ڡ˘ς)
 ( o˘◡˘o) ┌iii┐
 (　’ω’)旦~~
@@ -1444,7 +1444,7 @@ C:。ミ
 ( ^_^)／□☆□＼(^_^ )
 `);
 
-  cat("music", "ดนตรี / ร้องเพลง", "Music / Sing", "เพลง ร้อง ดนตรี กีตาร์ music sing song guitar", String.raw`
+  cat("music", "ดนตรี", "Music", "เพลง ร้อง ดนตรี กีตาร์ music sing song guitar ร้องเพลง", String.raw`
 ヾ(´〇｀)ﾉ♪♪♪
 ヽ(o´∀｀)ﾉ♪♬
 ♪ヽ(^^ヽ)♪
@@ -1479,7 +1479,7 @@ C:。ミ
 ♪┌|∵|┘♪
 `);
 
-  cat("writing", "เขียน / ทำงาน", "Writing / Working", "เขียน ทำงาน เรียน อ่าน คอมพิวเตอร์ write work study read computer", String.raw`
+  cat("writing", "ทำงาน", "Working", "เขียน ทำงาน เรียน อ่าน คอมพิวเตอร์ write work study read computer writing working ทำงานอยู่ busy", String.raw`
 φ(．．)
 __φ(．．)
 φ(゜▽゜*)♪
@@ -1512,7 +1512,7 @@ _(:3 」∠)_📱
 (..)φ
 `);
 
-  cat("pointing", "ชี้ / แนะนำ", "Pointing / Here", "ชี้ แนะนำ นี่ไง ดูตรงนี้ point look here this", String.raw`
+  cat("pointing", "ชี้", "Pointing", "ชี้ แนะนำ นี่ไง ดูตรงนี้ point look here this pointing ดูนี่", String.raw`
 (☞ﾟヮﾟ)☞
 ☜(ﾟヮﾟ☜)
 (☞ ͡° ͜ʖ ͡°)☞
@@ -1540,7 +1540,7 @@ _(:3 」∠)_📱
 ☞ ˘ ³˘)☞
 `);
 
-  cat("thumbs", "ยกนิ้ว / โอเค", "Thumbs Up / OK", "เยี่ยม โอเค ยกนิ้ว ผ่าน good ok thumbs nice approve", String.raw`
+  cat("thumbs", "โอเค", "Thumbs up", "เยี่ยม โอเค ยกนิ้ว ผ่าน good ok thumbs nice approve up", String.raw`
 (b ᵔ▽ᵔ)b
 (￣▽￣)b
 d(￣▽￣)b
@@ -1605,7 +1605,7 @@ OK(^_^)v
 (^.~)☆
 `);
 
-  cat("faces", "หน้าตาตลก", "Funny Faces", "ตลก ฮา ล้อเล่น แลบลิ้น funny silly tongue lol troll", String.raw`
+  cat("faces", "หน้าตลก", "Silly", "ตลก ฮา ล้อเล่น แลบลิ้น funny silly tongue lol troll หน้าตาตลก faces หน้าทะเล้น", String.raw`
 ( ͡° ͜ʖ ͡°)
 ( ͠° ͟ʖ ͡°)
 ( ͡ʘ ͜ʖ ͡ʘ)
@@ -1657,7 +1657,7 @@ OK(^_^)v
 (✌ﾟ∀ﾟ)☞
 `);
 
-  cat("evil", "ร้าย / เจ้าเล่ห์", "Evil / Sly", "ร้าย เจ้าเล่ห์ วางแผน ปีศาจ evil sly scheme devil sinister", String.raw`
+  cat("evil", "ร้ายๆ", "Evil", "ร้าย เจ้าเล่ห์ วางแผน ปีศาจ evil sly scheme devil sinister up to no good", String.raw`
 (￣ー￣)ﾆﾔﾘ
 (ψ｀∇´)ψ
 ψ(｀∇´)ψ
@@ -1692,7 +1692,7 @@ OK(^_^)v
 (⊙▂⊙✖ )
 `);
 
-  cat("pray", "อธิษฐาน / ขอบคุณ", "Pray / Thanks", "ขอบคุณ อธิษฐาน ขอพร thank thanks pray grateful", String.raw`
+  cat("pray", "ขอบคุณ", "Thanks", "ขอบคุณ อธิษฐาน ขอพร thank thanks pray grateful you", String.raw`
 (人ﾟ∀ﾟ*)
 (*´ω｀)人(´ω｀*)
 (人´ω｀*)
@@ -1720,7 +1720,7 @@ OK(^_^)v
 ヽ(*´∀｀)人(´∀｀*)ノ
 `);
 
-  cat("friends", "เพื่อน / คู่", "Friends / Couple", "เพื่อน คู่ แฟน ด้วยกัน friends couple together pair", String.raw`
+  cat("friends", "เพื่อน", "Friends", "เพื่อน คู่ แฟน ด้วยกัน friends couple together pair เพื่อนซี้ besties", String.raw`
 ヽ(*⌒▽⌒*)ﾉ(*⌒▽⌒*)
 (*・ω・)人(・ω・*)
 ヾ(・ω・)メ(・ω・)ノ
@@ -1749,7 +1749,7 @@ OK(^_^)v
 (o˘◡˘o)(o˘◡˘o)
 `);
 
-  cat("misc", "อื่นๆ / สัญลักษณ์", "Misc / Objects", "อื่นๆ สัญลักษณ์ ดอกไม้ ของ misc object flower symbol", String.raw`
+  cat("misc", "อื่นๆ", "Misc", "อื่นๆ สัญลักษณ์ ดอกไม้ ของ misc object flower symbol objects เบ็ดเตล็ด odds ends", String.raw`
 (*´▽｀)ノノ✿
 ✿ڿڰۣ—
 ❀◕ ‿ ◕❀
@@ -2135,7 +2135,7 @@ _( ᴗ ̫ ᴗ )_
 `);
 
   // ---------- หมวดใหม่: เทรนด์ไทย ----------
-  cat("oshi", "ติ่ง / โอตะ", "Fan / Idol", "ติ่ง โอตะ เกาหลี ไอดอล คอนเสิร์ต แท่งไฟ เมน kpop idol fan oshi concert lightstick", String.raw`
+  cat("oshi", "ติ่ง", "Fandom", "ติ่ง โอตะ เกาหลี ไอดอล คอนเสิร์ต แท่งไฟ เมน kpop idol fan oshi concert lightstick", String.raw`
 ( ˶ˆᗜˆ˵ )🎤
 ( ˶✧ ᗜ ✧˶ )💡
 ( ˙ᗜ˙ )ノ💡
@@ -2178,7 +2178,7 @@ _( ᴗ ̫ ᴗ )_
 ( ꒪ ᗝ ꒪ )🎫❌
 `);
 
-  cat("study", "เรียน / สอบ", "School / Exams", "เรียน สอบ การบ้าน โรงเรียน มหาลัย อ่านหนังสือ school study exam homework university", String.raw`
+  cat("study", "เรียน", "School", "เรียน สอบ การบ้าน โรงเรียน มหาลัย อ่านหนังสือ school study exam homework university", String.raw`
 ( ˙ ̫ ˙ )📚
 ( •̀ ᴗ •́ )✍🏻
 ( ´ ᴗ ｀ )📖
@@ -2221,7 +2221,7 @@ _(:3 」∠)_📚
 ( ˘ ᵕ ˘ )🏫🌸
 `);
 
-  cat("work", "ทำงาน / เหนื่อย", "Work / Tired", "ทำงาน เหนื่อย ออฟฟิศ ประชุม เงินเดือน วันจันทร์ ศุกร์ work office tired meeting salary monday friday", String.raw`
+  cat("work", "ออฟฟิศ", "Office", "ทำงาน เหนื่อย ออฟฟิศ ประชุม เงินเดือน วันจันทร์ ศุกร์ work office tired meeting salary monday friday", String.raw`
 ( ´ - ｀ )💻
 ( ˘ ‸ ˘ )☕️💻
 ( ᴗ ̫ ᴗ )💼
@@ -2264,7 +2264,7 @@ _( ´ - ｀ )_💻
 ( x ᴗ x )💤💼
 `);
 
-  cat("thaifood", "ของกิน / ชานม", "Food & Drinks (TH)", "ของกิน ชานม ไข่มุก ชาบู หมูกระทะ ส้มตำ ข้าวเหนียวมะม่วง กาแฟ ขนม เผ็ด bubble tea boba shabu thai food spicy dessert", String.raw`
+  cat("thaifood", "ของกินไทย", "Thai food", "ของกิน ชานม ไข่มุก ชาบู หมูกระทะ ส้มตำ ข้าวเหนียวมะม่วง กาแฟ ขนม เผ็ด bubble tea boba shabu thai food spicy dessert", String.raw`
 ( ˶ᵔ ᵕ ᵔ˶ )🧋
 ( ´ ᴗ ｀ )🧋✨
 ( ˙ ̫ ˙ )🍲
@@ -2378,7 +2378,7 @@ _( ´ - ｀ )_💻
 ( ˘ ω ˘ )🌙🕯️
 `);
 
-  cat("celebrate", "วันเกิด / เทศกาล", "Birthday / Holidays", "วันเกิด ปีใหม่ ตรุษจีน คริสต์มาส วาเลนไทน์ รับปริญญา ของขวัญ อวยพร birthday hbd new year christmas valentine graduation gift party", String.raw`
+  cat("celebrate", "วันเกิด", "Birthday", "วันเกิด ปีใหม่ ตรุษจีน คริสต์มาส วาเลนไทน์ รับปริญญา ของขวัญ อวยพร birthday hbd new year christmas valentine graduation gift party", String.raw`
 ( ˶ˆᗜˆ˵ )🎂
 ( ≧ ▽ ≦ )🎉
 ( ✧ ᗜ ✧ )🎁
@@ -2421,7 +2421,7 @@ _( ´ - ｀ )_💻
 ( ˘ ᵕ ˘ )🎂💌
 `);
 
-  cat("weather", "อากาศ / ร้อน / ฝน", "Weather", "อากาศ ร้อน ฝน หนาว ฝุ่น พายุ แดด weather hot rain cold dust storm sunny", String.raw`
+  cat("weather", "อากาศ", "Weather", "อากาศ ร้อน ฝน หนาว ฝุ่น พายุ แดด weather hot rain cold dust storm sunny", String.raw`
 ( ´ - ｀ )☀️🥵
 ( ꒪ ᗝ ꒪ )🔥☀️
 ( ;´ д ｀ )💦☀️
@@ -2460,7 +2460,7 @@ _( ´ - ｀ )_💻
 ☀️( ˃ ᴗ ˂ )🧴
 `);
 
-  cat("money", "เงิน / ช้อปปิ้ง", "Money / Shopping", "เงิน ช้อปปิ้ง ซื้อของ ลดราคา พัสดุ เงินเดือน หมดตัว หวย money shopping sale parcel salary broke lottery", String.raw`
+  cat("money", "ช้อปปิ้ง", "Shopping", "เงิน ช้อปปิ้ง ซื้อของ ลดราคา พัสดุ เงินเดือน หมดตัว หวย money shopping sale parcel salary broke lottery", String.raw`
 ( ✧ ᗜ ✧ )💰
 ( ´ ᴗ ｀ )💸
 ( ˙ ̫ ˙ )🛍️
@@ -2768,7 +2768,7 @@ m( _ _ )m🙏🏻
 `);
 
   // ---------- หมวดใหม่: สนุกๆ ----------
-  cat("spooky", "ผี / ฮาโลวีน", "Spooky / Halloween", "ผี ฮาโลวีน น่ากลัว ฟักทอง ค้างคาว ghost halloween spooky pumpkin bat scary", String.raw`
+  cat("spooky", "ผี", "Spooky", "ผี ฮาโลวีน น่ากลัว ฟักทอง ค้างคาว ghost halloween spooky pumpkin bat scary", String.raw`
 ( ˙ ᗜ ˙ )👻
 👻( ˙ ̫ ˙ )
 ( ꒪ ᗝ ꒪ )👻
@@ -2799,7 +2799,7 @@ m( _ _ )m🙏🏻
 ( ˙ ̫ ˙ )🍬👻
 `);
 
-  cat("sports", "กีฬา / ออกกำลังกาย", "Sports / Workout", "กีฬา ออกกำลังกาย ฟิตเนส วิ่ง ฟุตบอล บาส แบด เชียร์ sports workout gym fitness football basketball", String.raw`
+  cat("sports", "กีฬา", "Sports", "กีฬา ออกกำลังกาย ฟิตเนส วิ่ง ฟุตบอล บาส แบด เชียร์ sports workout gym fitness football basketball", String.raw`
 ( •̀ ᴗ •́ )⚽
 ( ˙ ᗜ ˙ )🏀
 ( ≧ ▽ ≦ )🏆
@@ -2832,7 +2832,7 @@ m( _ _ )m🙏🏻
 ( •̀ ᴗ •́ )و🔥🏋️
 `);
 
-  cat("travel", "เที่ยว / เดินทาง", "Travel", "เที่ยว เดินทาง ทะเล ภูเขา เครื่องบิน ญี่ปุ่น เกาหลี กระเป๋า travel trip beach mountain plane japan korea", String.raw`
+  cat("travel", "เที่ยว", "Travel", "เที่ยว เดินทาง ทะเล ภูเขา เครื่องบิน ญี่ปุ่น เกาหลี กระเป๋า travel trip beach mountain plane japan korea", String.raw`
 ( ˶ˆᗜˆ˵ )✈️
 ( ´ ᴗ ｀ )🧳
 ( ✧ ᗜ ✧ )🏝️
@@ -2865,7 +2865,7 @@ m( _ _ )m🙏🏻
 ( ˶ˆ ꒳ ˆ˵ )🍜🇯🇵
 `);
 
-  cat("birds", "นก / กบ / เป็ด", "Birds, Frogs & Ducks", "นก ลูกเจี๊ยบ เป็ด กบ เพนกวิน นกฮูก bird chick duck frog penguin owl", String.raw`
+  cat("birds", "นก", "Birds", "นก ลูกเจี๊ยบ เป็ด กบ เพนกวิน นกฮูก bird chick duck frog penguin owl", String.raw`
 ( •ө• )
 ( ˙ ө ˙ )
 ( ᵔ ө ᵔ )♡

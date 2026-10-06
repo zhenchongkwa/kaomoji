@@ -68,12 +68,89 @@
       "ᵃᵇᶜᵈᵉᶠᵍʰⁱʲᵏˡᵐⁿᵒᵖʳˢᵗᵘᵛʷˣʸᶻᴬᴮᴰᴱᴳᴴᴵᴶᴷᴸᴹᴺᴼᴾᴿᵀᵁⱽᵂ⁰¹²³⁴⁵⁶⁷⁸⁹") },
     { id: "strike", name: "Strike", all: combining("̶") },
     { id: "under", name: "Underline", all: combining("̲") },
-    { id: "hearts", name: "Hearts", all: function (text) {
-      return text.split("\n").map(function (line) {
-        return splitGraphemes(line).filter(function (g) { return g !== " "; }).join("♡");
-      }).join("\n");
-    } }
+    { id: "hearts", name: "Hearts", all: joinWith("♡") },
+
+    // ---------- ตัวอักษรคณิตศาสตร์เพิ่มเติม ----------
+    { id: "scriptthin", name: "Script light", per: offsetStyle(0x1D49C, 0x1D4B6, 0, {
+      B: "ℬ", E: "ℰ", F: "ℱ", H: "ℋ", I: "ℐ", L: "ℒ", M: "ℳ", R: "ℛ", e: "ℯ", g: "ℊ", o: "ℴ" }) },
+    { id: "frakturthin", name: "Gothic", per: offsetStyle(0x1D504, 0x1D51E, 0, {
+      C: "ℭ", H: "ℌ", I: "ℑ", R: "ℜ", Z: "ℨ" }) },
+    { id: "serifitalic", name: "Italic", per: offsetStyle(0x1D434, 0x1D44E, 0, { h: "ℎ" }) },
+    { id: "sansplain", name: "Sans", per: offsetStyle(0x1D5A0, 0x1D5BA, 0x1D7E2) },
+    { id: "sansbolditalic", name: "Sans bold italic", per: offsetStyle(0x1D63C, 0x1D656, 0x1D7EC) },
+    { id: "bubbleblack", name: "Bubble dark", per: function (ch) {
+      var c = ch.toUpperCase().charCodeAt(0);
+      return c >= 65 && c <= 90 ? String.fromCodePoint(0x1F150 + c - 65) : ch;
+    } },
+    { id: "paren", name: "Parentheses", per: function (ch) {
+      var c = ch.toLowerCase().charCodeAt(0);
+      if (c >= 97 && c <= 122) return String.fromCodePoint(0x249C + c - 97);
+      if (c >= 49 && c <= 57) return String.fromCodePoint(0x2474 + c - 49);
+      return ch;
+    } },
+    { id: "sub", name: "Subscript", per: mapStyle(
+      "aehijklmnoprstuvx0123456789+-=()",
+      "ₐₑₕᵢⱼₖₗₘₙₒₚᵣₛₜᵤᵥₓ₀₁₂₃₄₅₆₇₈₉₊₋₌₍₎") },
+    { id: "upside", name: "Upside down", all: upsideDown },
+
+    // ---------- เครื่องหมายซ้อน (ใช้ได้ทุกภาษา) ----------
+    { id: "slash", name: "Slashed", all: combining("̸") },
+    { id: "overline", name: "Overline", all: combining("̅") },
+    { id: "doubleunder", name: "Double underline", all: combining("̳") },
+    { id: "cross", name: "Crossed", all: combining("̽") },
+    { id: "stars", name: "Stars", all: joinWith("☆") },
+    { id: "dots", name: "Dots", all: joinWith("・") },
+    { id: "sparkles", name: "Sparkles", all: function (text) {
+      return text.split("\n").map(function (l) { return l.trim() ? "⋆｡˚ " + l + " ˚｡⋆" : l; }).join("\n");
+    } },
+
+    // ---------- ตัวอักษรหน้าตาคล้าย (ใช้อักษรภาษาอื่นแทน) ----------
+    { id: "curvy", name: "Curvy", per: caseless("abcdefghijklmnopqrstuvwxyz", "ᗩᗷᑕᗪEᖴGᕼIᒍKᒪᗰᑎOᑭᑫᖇᔕTᑌᐯᗯ᙭Yᘔ") },
+    { id: "yi", name: "Doodle", per: caseless("abcdefghijklmnopqrstuvwxyz", "ꍏꌃꏳꀷꏂꎇꁅꀍꀤ꒻ꀘ꒒ꎭꈤꂦᖘꆰꋪꌚ꓄ꀎ꒦ꅐꉧꌩꁴ") },
+    { id: "greek", name: "Greek-ish", per: caseless("abcdefghijklmnopqrstuvwxyz", "αв¢∂єƒgнιנкℓмησρqяѕтυνωχуz") },
+    { id: "cyrillic", name: "Cyrillic-ish", per: caseless("abcdefghijklmnopqrstuvwxyz", "дбҁↁєfбнiјќlмиоpqяѕгцvщжчз") },
+    { id: "kana", name: "Kana-ish", per: caseless("abcdefghijklmnopqrstuvwxyz", "ﾑ乃ᄃり乇ｷムんﾉﾌズﾚﾶ刀のｱゐ尺丂ｲひ√Wﾒﾘ乙") }
   ];
+
+  // กลุ่มของแต่ละสไตล์ (ใช้กรองในหน้าแปลงฟอนต์)
+  var GROUPS = {
+    fancy: "script scriptthin fraktur frakturthin double",
+    basic: "bold bolditalic sans sansplain italic serifitalic sansbolditalic mono smallcaps wide",
+    shapes: "bubble bubbleblack square paren tiny sub upside",
+    deco: "strike under slash overline doubleunder cross hearts stars dots sparkles",
+    alike: "curvy yi greek cyrillic kana"
+  };
+  Object.keys(GROUPS).forEach(function (g) {
+    GROUPS[g].split(" ").forEach(function (id) {
+      var st = STYLES.find(function (x) { return x.id === id; });
+      if (st) st.group = g;
+    });
+  });
+
+  // ใส่สัญลักษณ์คั่นระหว่างตัวอักษร (ข้ามช่องว่าง)
+  function joinWith(sym) {
+    return function (text) {
+      return text.split("\n").map(function (line) {
+        return splitGraphemes(line).filter(function (g) { return g !== " "; }).join(sym);
+      }).join("\n");
+    };
+  }
+
+  // แปลงตัวพิมพ์เล็ก/ใหญ่ให้เป็นตัวเดียวกัน
+  function caseless(from, to) {
+    var m = mapStyle(from, to);
+    return function (ch) { return m(ch.toLowerCase()) === ch.toLowerCase() ? ch : m(ch.toLowerCase()); };
+  }
+
+  // กลับหัว: แปลงทีละตัวแล้วเรียงย้อนหลัง (บรรทัดก็กลับลำดับด้วย)
+  var FLIP = mapStyle(
+    "abcdefghijklmnopqrstuvwxyzABCDEFGHJKLMPQRTUVWY12345679.,?!()[]{}<>_&'\"",
+    "ɐqɔpǝɟƃɥᴉɾʞlɯuodbɹsʇnʌʍxʎz∀ꓭƆꓷƎℲ⅁Hſꓘ˥WԀΌꓤ⊥∩ΛM⅄⇂↊Ɛㄣϛ9ㄥ6˙'¿¡)(][}{><‾⅋,„");
+  function upsideDown(text) {
+    return text.split("\n").reverse().map(function (line) {
+      return splitGraphemes(line).reverse().map(FLIP).join("");
+    }).join("\n");
+  }
 
   function convert(styleId, text) {
     var s = STYLES.find(function (x) { return x.id === styleId; });
@@ -84,6 +161,7 @@
 
   window.KaoFonts = {
     styles: STYLES,
+    groups: Object.keys(GROUPS),
     convert: convert,
     // ตัวอย่างสำหรับปุ่มเลือกสไตล์
     sample: function (id) { return convert(id, id === "square" || id === "bubble" ? "Cute" : "sample"); },

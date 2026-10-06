@@ -36,6 +36,72 @@
       top: function (n) { return "୨୧" + rep("┈", n) + "୨୧"; },
       bottom: function (n) { return "୨୧" + rep("┈", n) + "୨୧"; },
       left: "┊", right: "┊"
+    },
+    round: {
+      key: "frRound",
+      top: function (n) { return "╭" + rep("─", n) + "╮"; },
+      bottom: function (n) { return "╰" + rep("─", n) + "╯"; },
+      left: "│", right: "│"
+    },
+    double: {
+      key: "frDouble",
+      top: function (n) { return "╔" + rep("═", n) + "╗"; },
+      bottom: function (n) { return "╚" + rep("═", n) + "╝"; },
+      left: "║", right: "║"
+    },
+    thick: {
+      key: "frThick",
+      top: function (n) { return "┏" + rep("━", n) + "┓"; },
+      bottom: function (n) { return "┗" + rep("━", n) + "┛"; },
+      left: "┃", right: "┃"
+    },
+    dotted: {
+      key: "frDotted",
+      top: function (n) { return "┌" + rep("┄", n) + "┐"; },
+      bottom: function (n) { return "└" + rep("┄", n) + "┘"; },
+      left: "┆", right: "┆"
+    },
+    flower: {
+      key: "frFlower",
+      top: function (n) { return "✿" + rep("┈", n) + "✿"; },
+      bottom: function (n) { return "❀" + rep("┈", n) + "❀"; },
+      left: "┊", right: "┊"
+    },
+    sparkle: {
+      key: "frSparkle",
+      top: function (n) { return "⋆｡˚" + rep("┈", n) + "˚｡⋆"; },
+      bottom: function (n) { return "⋆｡˚" + rep("┈", n) + "˚｡⋆"; },
+      left: "⋆", right: "⋆"
+    },
+    wave: {
+      key: "frWave",
+      top: function (n) { return "╭" + rep("〜", n) + "╮"; },
+      bottom: function (n) { return "╰" + rep("〜", n) + "╯"; },
+      left: "┆", right: "┆"
+    },
+    music: {
+      key: "frMusic",
+      top: function (n) { return "♪" + rep("─", n) + "♫"; },
+      bottom: function (n) { return "♫" + rep("─", n) + "♪"; },
+      left: "♪", right: "♪"
+    },
+    moon: {
+      key: "frMoon",
+      top: function (n) { return "☾" + rep("⋆", n) + "☽"; },
+      bottom: function (n) { return "☽" + rep("⋆", n) + "☾"; },
+      left: "⋆", right: "⋆"
+    },
+    bow: {
+      key: "frBow",
+      top: function (n) { return "ᰔ" + rep("─", n) + "ᰔ"; },
+      bottom: function (n) { return "ᰔ" + rep("─", n) + "ᰔ"; },
+      left: "│", right: "│"
+    },
+    paw: {
+      key: "frPaw",
+      top: function (n) { return "ฅ" + rep("─", n) + "ฅ"; },
+      bottom: function (n) { return "ฅ" + rep("─", n) + "ฅ"; },
+      left: "│", right: "│"
     }
   };
 
@@ -50,7 +116,22 @@
     hamster: { key: "anHamster", lines: ["∩　∩", "( ˙ᴥ˙ )"] },
     chick: { key: "anChick", lines: ["( •ө• )"] },
     pig: { key: "anPig", lines: ["( ´(00)ˋ )"] },
-    bearrabbit: { key: "anBearRabbit", lines: ["ʕ •ᴥ• ʔ　／(･ × ･)＼"] }
+    bearrabbit: { key: "anBearRabbit", lines: ["ʕ •ᴥ• ʔ　／(･ × ･)＼"] },
+    catpaw: { key: "anCatPaw", lines: ["ฅ(^･ω･^ฅ)"] },
+    catsil: { key: "anCatSil", lines: ["ᓚᘏᗢ"] },
+    catbunny: { key: "anCatBunny", lines: ["ฅ^•ﻌ•^ฅ　／(･ × ･)＼"] },
+    puppy: { key: "anPuppy", lines: ["૮ ˶ᵔ ᵕ ᵔ˶ ა"] },
+    floppy: { key: "anFloppy", lines: ["U・ᴥ・U"] },
+    bearhug: { key: "anBearHug", lines: ["ʕっ•ᴥ•ʔっ"] },
+    bears: { key: "anBears", lines: ["ʕ •ᴥ•ʔ　ʕ•ᴥ• ʔ"] },
+    bunnyears: { key: "anBunnyEars", lines: ["／(･ × ･)＼"] },
+    chubby: { key: "anChubby", lines: ["(｡•ㅅ•｡)"] },
+    mouse: { key: "anMouse", lines: ["ᘛ⁐̤ᕐᐷ"] },
+    bird: { key: "anBird", lines: ["(・θ・)"] },
+    penguin: { key: "anPenguin", lines: ["<(｀^´)>"] },
+    owl: { key: "anOwl", lines: ["(◉Θ◉)"] },
+    fish: { key: "anFish", lines: ["><(((°>"] },
+    sheep: { key: "anSheep", lines: ["@(・●・)@"] }
   };
 
   function rep(s, n) { return n > 0 ? new Array(n + 1).join(s) : ""; }
@@ -64,10 +145,15 @@
   measurer.className = "post-measure";
   document.body.appendChild(measurer);
   var cache = new Map();
+  function domPx(s) {
+    measurer.textContent = s;
+    return measurer.getBoundingClientRect().width;
+  }
+  // วัดด้วยการจัดวางจริงของเบราว์เซอร์เสมอ (canvas เลือกฟอนต์สำรองต่างจากหน้าเว็บ
+  // โดยเฉพาะตอนหน้าเป็นภาษาไทย ทำให้เส้นกรอบ ━ วัดผิดไปเกือบเท่าตัว)
   function px(s) {
     if (cache.has(s)) return cache.get(s);
-    measurer.textContent = s;
-    var w = measurer.getBoundingClientRect().width;
+    var w = domPx(s);
     cache.set(s, w);
     return w;
   }
@@ -108,6 +194,8 @@
   }
 
   // หาจำนวนเส้นที่ทำให้ขอบบน/ล่างกว้างใกล้ target ที่สุด
+  // หาจำนวนเส้นที่ทำให้ขอบบน/ล่างกว้างใกล้ target ที่สุด
+  // (ความกว้างของเส้นแต่ละความยาวถูกจำไว้ใน cache พิมพ์ข้อความต่อก็ไม่ต้องวัดใหม่)
   function fitEdge(fn, target) {
     var best = 0, bestErr = Infinity;
     for (var n = 0; n < 80; n++) {
@@ -167,6 +255,7 @@
   function chipGroup(el, map, field) {
     el.innerHTML = "";
     Object.keys(map).forEach(function (id) {
+      if (map[id].lines && !Kao.supports(map[id].lines.join(""))) return; // เครื่องนี้แสดงไม่ได้
       var b = document.createElement("button");
       b.type = "button";
       b.className = "chip" + (state[field] === id ? " active" : "");
@@ -174,6 +263,8 @@
       b.textContent = Kao.t(map[id].key);
       el.appendChild(b);
     });
+    // รายการยาว: โชว์ส่วนแรก + ปุ่มดูเพิ่ม
+    Kao.collapse(el, field === "frame" ? 8 : 10);
     el.onclick = function (e) {
       var b = e.target.closest(".chip");
       if (!b) return;
@@ -190,15 +281,23 @@
     this.querySelectorAll(".chip").forEach(function (c) { c.classList.toggle("active", c === b); });
     update();
   });
-  input.addEventListener("input", update);
-  widthEl.addEventListener("input", update);
+  // พิมพ์เร็วๆ ก็คำนวณแค่ครั้งเดียวต่อเฟรม
+  var queued = false;
+  function queueUpdate() {
+    if (queued) return;
+    queued = true;
+    requestAnimationFrame(function () { queued = false; update(); });
+  }
+  input.addEventListener("input", queueUpdate);
+  widthEl.addEventListener("input", queueUpdate);
   $("copyBtn").addEventListener("click", function () { Kao.copyAndToast(build(), ""); });
   $("clearBtn").addEventListener("click", function () { input.value = ""; update(); input.focus(); });
-  window.addEventListener("resize", update);
+  window.addEventListener("resize", queueUpdate);
 
   Kao.onLang(function () {
     chipGroup($("frameChips"), FRAMES, "frame");
     chipGroup($("animalChips"), ANIMALS, "animal");
+    cache.clear(); // ภาษาของหน้าเปลี่ยน = ฟอนต์สำรองอาจเปลี่ยน ความกว้างที่จำไว้ใช้ไม่ได้
     update();
   });
   Kao.jumpButton("preview");

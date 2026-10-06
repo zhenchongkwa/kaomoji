@@ -1,0 +1,82 @@
+# Kaomoji Library
+
+> Free collection of 2,564 kaomoji (Japanese text emoticons) in 62 categories, with Thai and English search, plus text tools: a fancy font converter (37 styles), birthday ASCII art, cute text frames, aesthetic symbols and an emoji combo generator. Everything runs in the browser; click any item to copy it.
+> คลังคาโอโมจิ 2,564 แบบ 62 หมวด ค้นได้ทั้งไทยและอังกฤษ พร้อมเครื่องมือแต่งข้อความ ใช้ฟรี
+
+## Kaomoji categories
+
+- [Minimal kaomoji · คาโอโมจิมินิมอล](https://zhenchongkwa.github.io/kaomoji/kaomoji/minimal): 77 kaomoji, e.g. ᐢ ᵕ ᐢ  ˘ ᵕ ˘  ᵔ ᵕ ᵔ
+- [Teary kaomoji · คาโอโมจิน้ำตาคลอ](https://zhenchongkwa.github.io/kaomoji/kaomoji/teary): 67 kaomoji, e.g. ( ˘•̥-•̥˘ )  ( ꒦ິ⌑꒦ີ )  ( ᵕ̥̥ ᵕ̥̥ )
+- [In love kaomoji · คาโอโมจิใจละลาย](https://zhenchongkwa.github.io/kaomoji/kaomoji/in-love): 65 kaomoji, e.g. ( ˶ˆᗜˆ˵ )💗  ( ˶ᵔ ᵕ ᵔ˶ )💞  ( ⸝⸝ᵕᴗᵕ⸝⸝ )💕
+- [Hands kaomoji · คาโอโมจิทำมือ](https://zhenchongkwa.github.io/kaomoji/kaomoji/hands): 64 kaomoji, e.g. ( ˶ˆᗜˆ˵ )👍🏻  ( ᐢ ᵕ ᐢ )🫶🏻  ( ˙꒳˙ )👉🏻👈🏻
+- [Sparkly kaomoji · คาโอโมจิวิบวับ](https://zhenchongkwa.github.io/kaomoji/kaomoji/sparkly): 64 kaomoji, e.g. ( ˶ˆᗜˆ˵ )✨  ( ✧ᴗ✧ )  ( ⋆ ᴗ ⋆ )
+- [Sleepy kaomoji · คาโอโมจิง่วง](https://zhenchongkwa.github.io/kaomoji/kaomoji/sleepy): 63 kaomoji, e.g. ( ᴗ_ᴗ )💤  ( ˘ω˘ )zzZ  ( ᐢ- ̫ -ᐢ )
+- [Pouting kaomoji · คาโอโมจิงอน](https://zhenchongkwa.github.io/kaomoji/kaomoji/pouting): 59 kaomoji, e.g. ( ˘･з･ )  ( ¬ ε ¬ )  ( •̀ ⤙ •́ )
+- [Tiny animals kaomoji · คาโอโมจิสัตว์ตัวเล็ก](https://zhenchongkwa.github.io/kaomoji/kaomoji/tiny-animals): 64 kaomoji, e.g. ᓚᘏᗢ  ฅ^._.^ฅ  ฅ^. ̫ .^ฅ
+- [Fandom kaomoji · คาโอโมจิติ่ง](https://zhenchongkwa.github.io/kaomoji/kaomoji/fandom): 40 kaomoji, e.g. ( ˶ˆᗜˆ˵ )🎤  ( ˶✧ ᗜ ✧˶ )💡  ( ˙ᗜ˙ )ノ💡
+- [School kaomoji · คาโอโมจิเรียน](https://zhenchongkwa.github.io/kaomoji/kaomoji/school): 40 kaomoji, e.g. ( ˙ ̫ ˙ )📚  ( ´ ᴗ ｀ )📖  ( ⊙ _ ⊙ )📝
+- [Office kaomoji · คาโอโมจิออฟฟิศ](https://zhenchongkwa.github.io/kaomoji/kaomoji/office): 40 kaomoji, e.g. ( ´ - ｀ )💻  ( ˘ ‸ ˘ )☕️💻  ( ᴗ ̫ ᴗ )💼
+- [Thai food kaomoji · คาโอโมจิของกินไทย](https://zhenchongkwa.github.io/kaomoji/kaomoji/thai-food): 40 kaomoji, e.g. ( ˶ᵔ ᵕ ᵔ˶ )🧋  ( ´ ᴗ ｀ )🧋✨  ( ˙ ̫ ˙ )🍲
+- [Songkran kaomoji · คาโอโมจิสงกรานต์](https://zhenchongkwa.github.io/kaomoji/kaomoji/songkran): 35 kaomoji, e.g. ( ˶ˆᗜˆ˵ )💦  ( ≧ ▽ ≦ )🔫💦  💦( ˃ ᗜ ˂ )💦
+- [Loy Krathong kaomoji · คาโอโมจิลอยกระทง](https://zhenchongkwa.github.io/kaomoji/kaomoji/loy-krathong): 30 kaomoji, e.g. ( ˘ ᵕ ˘ )🏮  ( ˶ᵔ ᵕ ᵔ˶ )🪷  ( ´ ᴗ ｀ )🕯️🪷
+- [Birthday kaomoji · คาโอโมจิวันเกิด](https://zhenchongkwa.github.io/kaomoji/kaomoji/birthday): 40 kaomoji, e.g. ( ˶ˆᗜˆ˵ )🎂  ( ≧ ▽ ≦ )🎉  ( ✧ ᗜ ✧ )🎁
+- [Weather kaomoji · คาโอโมจิอากาศ](https://zhenchongkwa.github.io/kaomoji/kaomoji/weather): 36 kaomoji, e.g. ( ´ - ｀ )☀️🥵  ( ꒪ ᗝ ꒪ )🔥☀️  ( ´ ε ｀ )🌞
+- [Shopping kaomoji · คาโอโมจิช้อปปิ้ง](https://zhenchongkwa.github.io/kaomoji/kaomoji/shopping): 36 kaomoji, e.g. ( ✧ ᗜ ✧ )💰  ( ´ ᴗ ｀ )💸  ( ˙ ̫ ˙ )🛍️
+- [Gaming kaomoji · คาโอโมจิเกม](https://zhenchongkwa.github.io/kaomoji/kaomoji/gaming): 36 kaomoji, e.g. ( •̀ ᴗ •́ )🎮  ( ˙ ᗜ ˙ )🕹️  ( ✧ ᗜ ✧ )🏆🎮
+- [Happy kaomoji · คาโอโมจิยิ้ม](https://zhenchongkwa.github.io/kaomoji/kaomoji/happy): 50 kaomoji, e.g. (＾▽＾)  (◕‿◕)  (・∀・)
+- [Excited kaomoji · คาโอโมจิดีใจ](https://zhenchongkwa.github.io/kaomoji/kaomoji/excited): 42 kaomoji, e.g. ヽ(・∀・)ﾉ  ＼(＾▽＾)／  ヽ(°〇°)ﾉ
+- [Love kaomoji · คาโอโมจิรัก](https://zhenchongkwa.github.io/kaomoji/kaomoji/love): 50 kaomoji, e.g. (♡μ_μ)  (*^^*)♡  (♡-_-♡)
+- [Shy kaomoji · คาโอโมจิเขิน](https://zhenchongkwa.github.io/kaomoji/kaomoji/shy): 38 kaomoji, e.g. (*/ω＼)  (*/。＼)  (/ω＼)
+- [Sad kaomoji · คาโอโมจิเศร้า](https://zhenchongkwa.github.io/kaomoji/kaomoji/sad): 47 kaomoji, e.g. (╥﹏╥)  (ToT)  (T_T)
+- [Angry kaomoji · คาโอโมจิโกรธ](https://zhenchongkwa.github.io/kaomoji/kaomoji/angry): 47 kaomoji, e.g. (＃＞＜)  (；⌣̀_⌣́)  ☆o(＞＜；)○
+- [Table flip kaomoji · คาโอโมจิคว่ำโต๊ะ](https://zhenchongkwa.github.io/kaomoji/kaomoji/table-flip): 31 kaomoji, e.g. (╯°□°）╯︵ ┻━┻  (ノಠ益ಠ)ノ彡┻━┻  (ノ°Д°）ノ︵ ┻━┻
+- [Surprised kaomoji · คาโอโมจิตกใจ](https://zhenchongkwa.github.io/kaomoji/kaomoji/surprised): 40 kaomoji, e.g. (⊙_⊙)  (°ロ°)  (O_O)
+- [Confused kaomoji · คาโอโมจิงง](https://zhenchongkwa.github.io/kaomoji/kaomoji/confused): 39 kaomoji, e.g. (￣ω￣;)  (・_・ヾ  (＠_＠)
+- [Nervous kaomoji · คาโอโมจิกังวล](https://zhenchongkwa.github.io/kaomoji/kaomoji/nervous): 38 kaomoji, e.g. (;・∀・)  (；￣ω￣)  (・_・;)
+- [Bored kaomoji · คาโอโมจิเบื่อ](https://zhenchongkwa.github.io/kaomoji/kaomoji/bored): 38 kaomoji, e.g. (￣ー￣)  (－‸ლ)  (￣д￣)
+- [Smug kaomoji · คาโอโมจิเท่](https://zhenchongkwa.github.io/kaomoji/kaomoji/smug): 38 kaomoji, e.g. (⌐■_■)  (▀̿Ĺ̯▀̿ ̿)  (￣ー￣)ｂ
+- [Sorry kaomoji · คาโอโมจิขอโทษ](https://zhenchongkwa.github.io/kaomoji/kaomoji/sorry): 34 kaomoji, e.g. m(_ _)m  <(_ _)>  (シ_ _)シ
+- [Greetings kaomoji · คาโอโมจิทักทาย](https://zhenchongkwa.github.io/kaomoji/kaomoji/greetings): 40 kaomoji, e.g. (*・ω・)ﾉ  (￣▽￣)ノ  (°▽°)/
+- [Hug kaomoji · คาโอโมจิกอด](https://zhenchongkwa.github.io/kaomoji/kaomoji/hug): 35 kaomoji, e.g. (づ￣ ³￣)づ  (つ≧▽≦)つ  (つ✧ω✧)つ
+- [Kiss kaomoji · คาโอโมจิจุ๊บ](https://zhenchongkwa.github.io/kaomoji/kaomoji/kiss): 49 kaomoji, e.g. ( ˘ ³˘)♥  (*￣3￣)╭  (￣ε￣＠)
+- [Dance kaomoji · คาโอโมจิเต้น](https://zhenchongkwa.github.io/kaomoji/kaomoji/dance): 37 kaomoji, e.g. ヾ(-_- )ゞ  ♪┏(・o･)┛♪  ♪┗ ( ･o･) ┓♪
+- [Fight kaomoji · คาโอโมจิต่อยกัน](https://zhenchongkwa.github.io/kaomoji/kaomoji/fight): 36 kaomoji, e.g. (ง'̀-'́)ง  (ง •̀_•́)ง  (ꐦ•̀ᴗ•́)ง
+- [Running kaomoji · คาโอโมจิวิ่ง](https://zhenchongkwa.github.io/kaomoji/kaomoji/running): 49 kaomoji, e.g. ヽ(；▽；)ノ  ε===(っ≧ω≦)っ  ヽ(´Д｀;)ﾉ
+- [Peeking kaomoji · คาโอโมจิแอบมอง](https://zhenchongkwa.github.io/kaomoji/kaomoji/peeking): 51 kaomoji, e.g. |･ω･)  |ω・)  |д･)
+- [Shrug kaomoji · คาโอโมจิยักไหล่](https://zhenchongkwa.github.io/kaomoji/kaomoji/shrug): 50 kaomoji, e.g. ¯\_(ツ)_/¯  ┐(￣ヘ￣)┌  ╮(￣ω￣;)╭
+- [Sleep kaomoji · คาโอโมจินอน](https://zhenchongkwa.github.io/kaomoji/kaomoji/sleep): 36 kaomoji, e.g. (－_－) zzZ  (∪｡∪)｡｡｡zzZ  (－ω－) zzZ
+- [Sick kaomoji · คาโอโมจิป่วย](https://zhenchongkwa.github.io/kaomoji/kaomoji/sick): 36 kaomoji, e.g. (×_×)  (x_x)  (×﹏×)
+- [Magic kaomoji · คาโอโมจิเวทมนตร์](https://zhenchongkwa.github.io/kaomoji/kaomoji/magic): 33 kaomoji, e.g. (ﾉ◕ヮ◕)ﾉ*:・ﾟ✧  (∩˃o˂∩)━━━━☆  (✿◕‿◕)━☆
+- [Cat kaomoji · คาโอโมจิแมว](https://zhenchongkwa.github.io/kaomoji/kaomoji/cat): 40 kaomoji, e.g. (=^･ω･^=)  (=^･ｪ･^=)  (=①ω①=)
+- [Dog kaomoji · คาโอโมจิหมา](https://zhenchongkwa.github.io/kaomoji/kaomoji/dog): 30 kaomoji, e.g. ∪＾ェ＾∪  ∪･ω･∪  ∪￣-￣∪
+- [Bear kaomoji · คาโอโมจิหมี](https://zhenchongkwa.github.io/kaomoji/kaomoji/bear): 32 kaomoji, e.g. ʕ •ᴥ•ʔ  ʕ ᵔᴥᵔ ʔ  ʕ ㅇ ᴥ ㅇʔ
+- [Rabbit kaomoji · คาโอโมจิกระต่าย](https://zhenchongkwa.github.io/kaomoji/kaomoji/rabbit): 48 kaomoji, e.g. ／(≧ x ≦)＼  ／(･ × ･)＼  ／(=´x｀=)＼
+- [Other animals kaomoji · คาโอโมจิสัตว์อื่นๆ](https://zhenchongkwa.github.io/kaomoji/kaomoji/other-animals): 37 kaomoji, e.g. ( ´(00)ˋ )  (￣(00)￣)  ( ˘(oo)˘ )
+- [Food kaomoji · คาโอโมจิอาหาร](https://zhenchongkwa.github.io/kaomoji/kaomoji/food): 38 kaomoji, e.g. (っ˘ڡ˘ς)  (　’ω’)旦~~  ( ˘▽˘)っ♨
+- [Music kaomoji · คาโอโมจิดนตรี](https://zhenchongkwa.github.io/kaomoji/kaomoji/music): 32 kaomoji, e.g. ヾ(´〇｀)ﾉ♪♪♪  ヽ(o´∀｀)ﾉ♪♬  ♪ヽ(^^ヽ)♪
+- [Working kaomoji · คาโอโมจิทำงาน](https://zhenchongkwa.github.io/kaomoji/kaomoji/working): 30 kaomoji, e.g. φ(．．)  __φ(．．)  φ(゜▽゜*)♪
+- [Pointing kaomoji · คาโอโมจิชี้](https://zhenchongkwa.github.io/kaomoji/kaomoji/pointing): 50 kaomoji, e.g. (☞ﾟヮﾟ)☞  ☜(ﾟヮﾟ☜)  ☜(⌒▽⌒)☞
+- [Thumbs up kaomoji · คาโอโมจิโอเค](https://zhenchongkwa.github.io/kaomoji/kaomoji/thumbs-up): 31 kaomoji, e.g. (b ᵔ▽ᵔ)b  (￣▽￣)b  d(￣▽￣)b
+- [Wink kaomoji · คาโอโมจิขยิบตา](https://zhenchongkwa.github.io/kaomoji/kaomoji/wink): 50 kaomoji, e.g. (^_~)  (^_-)  (~_^)
+- [Silly kaomoji · คาโอโมจิหน้าตลก](https://zhenchongkwa.github.io/kaomoji/kaomoji/silly): 49 kaomoji, e.g. ( ͡° ͜ʖ ͡°)  ( ͠° ͟ʖ ͡°)  ( ͡ʘ ͜ʖ ͡ʘ)
+- [Evil kaomoji · คาโอโมจิร้ายๆ](https://zhenchongkwa.github.io/kaomoji/kaomoji/evil): 32 kaomoji, e.g. (￣ー￣)ﾆﾔﾘ  (ψ｀∇´)ψ  ψ(｀∇´)ψ
+- [Thanks kaomoji · คาโอโมจิขอบคุณ](https://zhenchongkwa.github.io/kaomoji/kaomoji/thanks): 49 kaomoji, e.g. (人ﾟ∀ﾟ*)  (人´ω｀*)  (｡-人-｡)
+- [Friends kaomoji · คาโอโมจิเพื่อน](https://zhenchongkwa.github.io/kaomoji/kaomoji/friends): 49 kaomoji, e.g. ヾ(´ー｀)ノ(¬‿¬)  (◕ᴗ◕✿)(✿◕ᴗ◕)  (・∀・)人(・∀・)
+- [Misc kaomoji · คาโอโมจิอื่นๆ](https://zhenchongkwa.github.io/kaomoji/kaomoji/misc): 30 kaomoji, e.g. (*´▽｀)ノノ✿  ✿ڿڰۣ—  ❀◕ ‿ ◕❀
+- [Spooky kaomoji · คาโอโมจิผี](https://zhenchongkwa.github.io/kaomoji/kaomoji/spooky): 28 kaomoji, e.g. ( ˙ ᗜ ˙ )👻  👻( ˙ ̫ ˙ )  ( ꒪ ᗝ ꒪ )👻
+- [Sports kaomoji · คาโอโมจิกีฬา](https://zhenchongkwa.github.io/kaomoji/kaomoji/sports): 30 kaomoji, e.g. ( •̀ ᴗ •́ )⚽  ( ˙ ᗜ ˙ )🏀  ( ≧ ▽ ≦ )🏆
+- [Travel kaomoji · คาโอโมจิเที่ยว](https://zhenchongkwa.github.io/kaomoji/kaomoji/travel): 30 kaomoji, e.g. ( ˶ˆᗜˆ˵ )✈️  ( ´ ᴗ ｀ )🧳  ( ✧ ᗜ ✧ )🏝️
+- [Birds kaomoji · คาโอโมจินก](https://zhenchongkwa.github.io/kaomoji/kaomoji/birds): 30 kaomoji, e.g. ( •ө• )  ( ˙ ө ˙ )  ( ᵔ ө ᵔ )♡
+
+## Tools
+
+- [Kaomoji search](https://zhenchongkwa.github.io/kaomoji/): search all kaomoji in Thai or English, e.g. https://zhenchongkwa.github.io/kaomoji/index.html?q=cat
+- [Fancy font converter · แปลงฟอนต์](https://zhenchongkwa.github.io/kaomoji/font): 37 Unicode text styles for bios and posts
+- [Birthday ASCII art · AA อวยพร](https://zhenchongkwa.github.io/kaomoji/aa): celebration ASCII art with your own text
+- [Text frame maker · กรอบข้อความ](https://zhenchongkwa.github.io/kaomoji/frame): cute ASCII frames with animals, sized for phone screens
+- [Aesthetic symbols · แต่งวิบวับ](https://zhenchongkwa.github.io/kaomoji/kirakira): 200+ cute symbols and ready-made decorations
+- [Emoji combos · เติมอีโมจิ](https://zhenchongkwa.github.io/kaomoji/emoji): random emoji combos by theme or color
+
+## Optional
+
+- [All kaomoji as plain text](https://zhenchongkwa.github.io/kaomoji/llms-full.txt)
